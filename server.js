@@ -9,7 +9,7 @@ const DetallePedidoRoutes = require("./app/routes/detalle_pedido.routes");
 class Server {
   constructor() {
     this.app = express();
-    this.port = process.env.APP_PORT || 8081;
+    this.port = process.env.PORT || 8081;
 
     this.configureMiddlewares();
     this.configureRoutes();

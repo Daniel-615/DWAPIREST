@@ -7,7 +7,7 @@ class DBConfig {
     this.USER = process.env.USER;
     this.PASSWORD = process.env.PASSWORD;
     this.DB = process.env.DB;
-    this.PORT = process.env.PORT;
+    this.PORT = process.env.DB_PORT;
     this.dialect = process.env.DIALECT;
     this.pool = {
       max: 5,
