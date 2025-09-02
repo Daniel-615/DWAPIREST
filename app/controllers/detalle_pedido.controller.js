@@ -22,7 +22,6 @@ class DetallePedidoController {
     try {
       const data = await DetallePedido.create(detallePedido);
       return res.status(201).send({
-        message: "Detalle de pedido creado exitosamente.",
         data
       });
     } catch (err) {
@@ -42,7 +41,6 @@ class DetallePedidoController {
       });
 
       return res.status(200).send({
-        message: "Detalles de pedidos encontrados.",
         data
       });
     } catch (err) {

@@ -34,8 +34,7 @@ class PedidoController {
       const data = await Pedido.create(pedido);
 
       return res.status(201).send({
-        message: "Pedido creado exitosamente.",
-        data: data,
+        data
       });
     } catch (err) {
       return res.status(500).send({
@@ -62,8 +61,7 @@ class PedidoController {
       });
 
       return res.status(200).send({
-        message: "Pedidos encontrados.",
-        data: data,
+        data
       });
     } catch (err) {
       return res.status(500).send({

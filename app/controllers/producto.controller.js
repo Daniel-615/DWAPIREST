@@ -27,8 +27,7 @@ class ProductoController{
             return res
             .status(201)
             .send({
-                message: "Producto creado exitosamente.",
-                data: data
+               data
             })
         }catch(err){
             return res
@@ -48,8 +47,7 @@ class ProductoController{
             return res
             .status(200)
             .send({
-                message: "Productos encontrados.",
-                data: data
+                data
             })
         }catch(err){
             return res
