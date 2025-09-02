@@ -13,7 +13,7 @@ class ClienteController {
       direccion: req.body.direccion,
       correo: req.body.correo,
       telefono: req.body.telefono,
-      ingreso: req.body.ingreso,
+      ingreso: req.body.ingreso || new Date(),
       status: req.body.status ?? false,
       createdAt: req.body.createdAt || new Date(),
       updatedAt: req.body.updatedAt || new Date()
